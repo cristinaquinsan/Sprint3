@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+    <link rel="stylesheet" href="../css/productStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="../assets/logo.png" alt="logo" width="70%" height="70%"></a>
+            <div class="left">
+            <ul class="navbar-nav left">
+                <li class="nav-item dropdown"> <!--Ver por qué peta!?-->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="art.html">Art</a>
+                        <a class="dropdown-item" href="cosmetics.html">Cosmetics</a>
+                        <a class="dropdown-item" href="food.html">Food</a>
+                        <a class="dropdown-item" href="freak.html">Freak</a>
+                        <a class="dropdown-item" href="random.html">Random</a>
+                        <a class="dropdown-item" href="survival.html">Survival</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul class="navbar-nav right">
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Log in</a>
+                    <a class="nav-link" href="signin.html">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shoppingCart.html" class="nav-link">Shopping Cart</a>
+                </li>
+            </ul>
+        </div>
+
+        </nav>
+        <div class="product">
+        <div class="row">
+            <img src="./assets/cajaArte_5.jpg" alt="artBox">
+            <div class="infoProduct">
+                <p class="title">Monthly Subscription Art Box</p>
+                <p class="price">Price: 12$</p>
+                <p class="shipping">
+                    <p class="underline">Choose shipping:<br></p>
+                    <input type="radio" name="shipping" value="Normal"> Normal shipping: 5.99$<br>
+                    <input type="radio" name="shipping" value="Express"> Express shipping: 12.99$<br>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <p class="desc">
+                <b>Monthly Subscription Art Box</b>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus justo est, vitae vulputate justo laoreet sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tincidunt, tortor nec commodo bibendum, mauris turpis tincidunt nisl, vel dignissim velit nisi non est. Nulla a molestie orci, eget placerat erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sem neque, gravida nec imperdiet nec, hendrerit in ex. Sed tempor lacus lorem.
+            </p>
+            <button class="add up">Add to cart</button>
+        </div>
+        <h3>Reviews</h3>
+        <div class="row">
+            <p class="reviews">
+                <b>Paco Pérez</b>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus justo est, vitae vulputate justo laoreet sed.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

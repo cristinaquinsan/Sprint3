@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body{
+    background-color: rgb(51, 51, 51);
+    margin: 0;
+    padding: 0;
+    color:whitesmoke;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left{
+    justify-content: left;
+    margin-right: 250px;
+    margin-left: none;
+}
+
+.right{
+    justify-content: right;
+}
+
+.navbar-nav{
+    flex-direction: row; 
+}
+
+.nav-item{
+    padding: 20px;
+}
+
+h3{
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+p{
+    padding:15px;
+    color:whitesmoke;
+    background-color: transparent;
+    margin:auto;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+  
+.underline{
+     text-decoration: underline;
+}
+  
+.product{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:5px;
+}
+  
+.product img{
+    align-self: center;
+    max-width: 250px; 
+    max-height: 250px;
+}
+
+.add{
+    color:white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background:rgb(23, 162, 184);
+    text-align: center;
+    transition:all 0.5s;
+    border:none;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+   }
+  
+.add:hover{
+    background:rgb(23, 162, 184, 0.5);
+   }
+

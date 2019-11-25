@@ -112,7 +112,7 @@ textarea {
 
 .button:hover, .button:focus {
     background:rgb(23, 162, 184,0.5);
-  }
+}
 
 .button-block {
   display:block;
