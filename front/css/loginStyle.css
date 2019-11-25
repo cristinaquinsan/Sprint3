@@ -16,71 +16,29 @@ $normal: 400;
 $bold: 600;
 $br: 4px;
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-html {
-	overflow-y: scroll; 
-}
-
-body {
-  background:$body-bg;
-  font-family: 'Titillium Web', sans-serif;
-}
 
 a {
   text-decoration:none;
-  color:$main;
+  color:rgb(23, 162, 184);
   transition:.5s ease;
-  &:hover {
-    color:$main-dark;
-  }
+}
+a:hover {
+    color:rgba(23, 162, 184,0.5);
 }
 
 .form {
-  background:rgba($form-bg,.9);
+  background:rgba(51, 51, 51,0.9);
   padding: 40px;
   max-width:600px;
   margin:40px auto;
-  border-radius:$br;
-  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+  border-radius:5px;
+  box-shadow:0 4px 10px 4px rgb(37, 37, 37);
 }
 
 .tab-group {
   list-style:none;
   padding:0;
   margin:0 0 40px 0;
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  li a {
-    display:block;
-    text-decoration:none;
-    padding:15px;
-    background:rgba($gray-light,.25);
-    color:$gray-light;
-    font-size:20px;
-    float:left;
-    width:50%;
-    text-align:center;
-    cursor:pointer;
-    transition:.5s ease;
-    &:hover {
-      background:$main-dark;
-      color:$white;
-    }
-  }
-  .active a {
-    background:$main;
-    color:$white;
-  }
-}
-
-.tab-content > div:last-child {
-  display:none;
 }
 
 
@@ -91,33 +49,6 @@ h1 {
   margin:0 0 40px;
 }
 
-label {
-  position:absolute;
-  transform:translateY(6px);
-  left:13px;
-  color:rgba($white,.5);
-  transition:all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
-  font-size:22px;
-  .req {
-  	margin:2px;
-  	color:$main;
-  }
-}
-
-label.active {
-  transform:translateY(50px);
-  left:2px;
-  font-size:14px;
-  .req {
-    opacity:0;
-  }
-}
-
-label.highlight {
-	color:$white;
-}
 
 input, textarea {
   font-size:22px;
@@ -127,8 +58,8 @@ input, textarea {
   padding:5px 10px;
   background:none;
   background-image:none;
-  border:1px solid $gray-light;
-  color:$white;
+  border:1px solid #f1f1f1;
+  color:#FFFFFF;
   border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
   &:focus {
@@ -174,12 +105,13 @@ textarea {
   text-transform:uppercase;
   letter-spacing:.1em;
   background:$main;
-  color:$white;
+  color: rgb(23, 162, 184);
   transition:all.5s ease;
   -webkit-appearance: none;
-  &:hover, &:focus {
-    background:$main-dark;
-  }
+}
+
+.button:hover, .button:focus {
+    background:rgb(23, 162, 184,0.5);
 }
 
 .button-block {
