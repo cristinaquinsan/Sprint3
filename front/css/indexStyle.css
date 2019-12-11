@@ -48,6 +48,12 @@ p{
     border-radius: 15px;
 }
 
+.productos>img{
+    align-self: center;
+    max-width: 250px; 
+    max-height: 250px;
+}
+
 footer{
     background-color: rgb(51, 51, 51);
     display: flex;
@@ -63,3 +69,4 @@ footer a:hover{
     color:#fabada;
     text-decoration: none;
 }
+

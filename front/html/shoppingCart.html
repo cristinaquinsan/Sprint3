@@ -53,11 +53,15 @@
 
         </nav>
     <div class="cart_div">
-        <h1 class='cart_title'>Este es su carrito de productos:</h1>
+        <h1 class='cart_title'>This is your Shopping Cart:</h1>
         <div class="cart_products">
-
+            <p>Here you have your products! If you have finished, please, click on Checkout</p>
         </div>
-        <button type="button" name="Checkout"></button>
+        <form action="checkout.html" method="post">
+            <input type="hidden" id="custId" name="custId" value="checkout">
+
+            <button class="btn btn-outline-info" type="submit" name="Checkout" value="submit">Checkout</button>
+        </form>
     </div>
     <footer>
         <a href="aboutUs.html">Who are we?</a>

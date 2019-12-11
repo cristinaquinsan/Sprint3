@@ -19,13 +19,17 @@ function loadShoppingCart(){
 function loadProducts(){
 
     const JSONproducts = JSON.parse(localStorage.getItem('JSONproducts'));
-    var html;
+    var html = "";
 
     $.each(JSONproducts.products, function(index, element){
-        html += '<div class="product"><img src="' + element.image + '" alt="' + element.name + '">'
-        '<div class="miniature">'+
-        '<a href="product.html" class="productLink"><p class="name">'+element.name+'</p>'
-        '<div class="info"> <p class="price">'+element.price+'</p> <button class="add">Add to cart</button></div></div></div>';
+        html += '<div class="product">';
+        html += '<img src="' + element.image + '" alt="' + element.name + '">'
+        html += '<div class="miniature">'
+        html += '<a href="product.html" class="productLink"><p class="name">'+element.name+'</p>'
+        html += '<div class="info"> <p class="price">'+element.price+'</p>'
+        html += '<button class="btn btn-outline-info">Add to cart</button></div>'
+        html += '</div>'
+        html +='</div>';
     })
 
     document.getElementById("productos").innerHTML = html;
@@ -42,7 +46,7 @@ function initialLoadJSONs(){
     ]};
 
     const JSONproducts = {'products':[
-        {'product_id':1, 'seller_id':2, 'name':'art', 'price':[10, 27, 78], 'description':"art box",'suscription':[1, 3, 9], 'category':'art', 'image':'../assets/products/art.jpg'},
+        {'product_id':1, 'seller_id':2, 'name':'art', 'price':[10, 27, 78], 'description':"art box",'suscription':[1, 3, 9], 'category':'art', 'image':'../assets/products/arte.jpg'},
         {'product_id':2, 'seller_id':2, 'name':'knives', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'survival', 'image':'../assets/products/survival.jpeg'},
         {'product_id':3, 'seller_id':3, 'name':'tools', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'survival', 'image':'../assets/products/survvival.jpeg'},
         {'product_id':4, 'seller_id':2, 'name':'Bio-cosmetics', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'cosmetics', 'image':'../assets/products/makeup.png'},
