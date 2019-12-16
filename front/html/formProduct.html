@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/indexStyle.css">
-    <link rel="stylesheet" href="../css/dashboardStyle.css">
+    <link rel="stylesheet" href="../css/formProductStyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="index.html"><img src="../assets/logo.png" alt="logo" width="70%" height="70%"></a>
             <div class="left">
             <ul class="navbar-nav left">
-                <li class="nav-item dropdown"> <!--Ver por qué peta!?-->
+                <li class="nav-item dropdown"> 
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="art.html">Art</a>
@@ -51,20 +51,30 @@
         </div>
 
         </nav>
-    <form action="./formProduct.html">
-        <button class="btn btn-outline-info" type="submit">Add new product</button>
+    <form class="productForm" action="./dashboardAdmin.html" method="post">
+    Product name:<br>
+    <input type="text" name="name"><br>
+    Product prices:<br>
+    <input type="number" name="price" placeholder="1 month price" style="width: 150px;"><br>
+    <input type="number" name="price" placeholder="3 month price" style="width: 150px;"><br>
+    <input type="number" name="price" placeholder="9 month price" style="width: 150px;"><br>
+    Seller id:<br>
+    <input type="number" name="seller_id"><br>
+    Description:<br>
+    <input type="textarea" name="description" style="height: 150px;"><br>
+    Category:<br>
+    <select name="categories">
+        <option value="art">Art</option>
+        <option value="cosmetics">Cosmetics</option>
+        <option value="food">Food</option>
+        <option value="freak">Freak</option>
+        <option value="random">Random</option>
+        <option value="survival">Survival</option>
+      </select><br>
+    Image:<br>
+    <input type="file" name="image"><br><br>
+    <div class="boton">
+    <input class="btn btn-outline-info" type="submit" value="Submit"></div>
     </form>
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Seller</th>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-        <div class="productosAdmin">
-            <!--Meter los productos con la api-->
-
-        </div>
-    </table>
 </body>
 </html>

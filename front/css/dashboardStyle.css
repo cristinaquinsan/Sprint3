@@ -1,0 +1,15 @@
+button{
+    margin:15px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    background-color: rgb(23, 162, 184);
+    color: white;
+  }

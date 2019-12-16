@@ -1,0 +1,16 @@
+.productForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    margin-bottom: 50px;
+}
