@@ -23,13 +23,20 @@ function loadProducts(){
 
     $.each(JSONproducts.products, function(index, element){
         html += '<div class="product">';
-        html += '<img src="' + element.image + '" alt="' + element.name + '">'
+        html += '<img src="' + element.image + '" alt="' + element.name + '" style="max-width: 180px; max-height: 180px;">'
         html += '<div class="miniature">'
-        html += '<a href="product.html" class="productLink"><p class="name">'+element.name+'</p>'
-        html += '<div class="info"> <p class="price">'+element.price+'</p>'
+        html += '<a href="product.html" class="productLink"><p class="name">'+element.name+'</p></a>'
+        html += '<div class="info"> <p class="price"> Desde '+element.price[0]+'€</p>'
         html += '<button class="btn btn-outline-info">Add to cart</button></div>'
         html += '</div>'
         html +='</div>';
+        html += '<style>';
+        html += '.product{ display: flex; flex-direction:row; border-color: #17a2b8; margin: 15px;}';
+        html += '.miniature{ display: flex; flex-direction: column; justify-content: space-evenly;}';
+        html += '.info{ display: flex; flex-direction: column; justify-content: space-evenly; }';
+        html += '.info button {margin-left: 70px;}';
+        html += '.product p {background-color: transparent; }';
+        html += '</style>';
     })
 
     document.getElementById("productos").innerHTML = html;
@@ -46,9 +53,9 @@ function initialLoadJSONs(){
     ]};
 
     const JSONproducts = {'products':[
-        {'product_id':1, 'seller_id':2, 'name':'art', 'price':[10, 27, 78], 'description':"art box",'suscription':[1, 3, 9], 'category':'art', 'image':'../assets/products/arte.jpg'},
-        {'product_id':2, 'seller_id':2, 'name':'knives', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'survival', 'image':'../assets/products/survival.jpeg'},
-        {'product_id':3, 'seller_id':3, 'name':'tools', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'survival', 'image':'../assets/products/survvival.jpeg'},
+        {'product_id':1, 'seller_id':2, 'name':'Traditional Art Box', 'price':[10, 27, 78], 'description':"art box",'suscription':[1, 3, 9], 'category':'art', 'image':'../assets/products/arte.jpg'},
+        {'product_id':2, 'seller_id':2, 'name':'Knives Kit', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'survival', 'image':'../assets/products/survival.jpeg'},
+        {'product_id':3, 'seller_id':3, 'name':'Tools Kit', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'survival', 'image':'../assets/products/survival.jpeg'},
         {'product_id':4, 'seller_id':2, 'name':'Bio-cosmetics', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'cosmetics', 'image':'../assets/products/makeup.png'},
         {'product_id':5, 'seller_id':3, 'name':'Maekup', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'cosmetics', 'image':'../assets/products/makeup.png'},
         {'product_id':6, 'seller_id':3, 'name':'Korean food', 'price':[10, 27, 78], 'description':'Box de cuchillos para el superviviente','suscription':[1, 3, 9], 'category':'food', 'image':'../assets/products/japFood.jpg'},
@@ -72,7 +79,7 @@ function initialLoadJSONs(){
 }
 
 /*******************************************************************************
-                            localStorage MMETHODS
+                            localStorage METHODS
 *******************************************************************************/
 
 

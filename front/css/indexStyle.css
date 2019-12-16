@@ -48,19 +48,23 @@ p{
     border-radius: 15px;
 }
 
-.productos>img{
-    align-self: center;
-    max-width: 250px; 
-    max-height: 250px;
+#productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 footer{
+    border-top: solid 2px whitesmoke;
     background-color: rgb(51, 51, 51);
     display: flex;
     justify-content: space-evenly;
 }
 
 footer a{
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-decoration: none;
     color: whitesmoke;
 }
